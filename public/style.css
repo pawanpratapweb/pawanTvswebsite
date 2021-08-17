@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Catamaran", sans-serif;
+}
+
+button,
+.button {
+    padding: 7px 14px;
+    border: none;
+    box-shadow: 0 0 7px -2px #4d4d4d;
+    border-radius: 2px;
+}
+
+:root {
+    --mainColor: #1e2028;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    background: var(--mainColor);
+}
+
+.nav-link {
+    color: white !important;
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    color: #d0d0d0 !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-size: 100% 100% !important;
+    height: 23px !important;
+    width: 20px !important;
+}
+
+.noPageMain {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.noPageInner {
+    height: 320px;
+    width: 300px;
+    display: grid;
+    place-items: center;
+}
+
+.goToHomeBtn {
+    background: var(--mainColor);
+    color: white;
+}
+
+@media (max-width: 320px) {
+    .noPageInner {
+        width: 250px;
+    }
+}
+
+/* contact page style */
+
+.contactMain {
+    height: 85%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.form {
+    display: grid;
+    place-items: center;
+    height: 392px;
+    width: 300px;
+}
+
+@media (max-width: 320px) {
+    .form {
+        width: 90%;
+    }
+}
+
+.inputBox,
+.form form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.inputBox:focus,
+.form form textarea:focus {
+    border-color: #b2b2b2;
+    outline: none
+}
+
+.formSubmitBtn {
+    background-color: #3E00FF;
+    border-radius: 4px;
+    color: white;
+}
+
+.formMessage {
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 7px -2px #4d4d4d;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.serviceBottom {
+    width: calc(100% - 15px);
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 4px;
+    background-color: #7324ff;
+    padding-top: 15px;
+}
+
+.serviceBottom * {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.serviceBottom div img {
+    height: 27px;
+    margin-right: 10px;
+}
+
+/* about section start */
+
+.aboutMain {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.aboutCard {
+    height: 385px;
+    width: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 12px -5px grey;
+}
+
+@media(max-width: 300px) {
+    .aboutCard {
+        width: 95%;
+    }
+}
+
+.aboutCardImage {
+    width: 100%;
+}
+
+.aboutCardBody {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.aboutCardBody h1 {
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+/* service page */
+
+.serviceMain {
+    width: 100%;
+    height: 80%;
+    padding: 0 60px;
+}
+
+.serviceFirst {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.serviceFirst div h1 {
+    font-weight: bolder;
+}
+
+@media(max-width: 600px) {
+    .serviceFirst div h1 {
+        font-size: 25px;
+    }
+
+    .serviceFirst {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+}
+
+.serviceFirstImage {
+    display: grid;
+    place-items: center;
+}
